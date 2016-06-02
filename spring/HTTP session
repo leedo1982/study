@@ -1,0 +1,40 @@
+1. session이란? 서버가 해당 서버(웹)로 접근(request)한 클라이언트(사용자)를 식별하는 방법
+2. 서버(웹)는 접근한 클라이언트(사용자)에게 response-header field인 set-cookie 값으로 클라이언트 식별자인 session-id(임의의 긴 문자열)를 발행(응답)한다.
+3. 서버로부터 발행(응답)된 session-id는 해당 서버(웹)와 클라이언트(브라우저) 메모리에 저장된다. 
+이때 클라이언트 메모리에 사용되는 cookie 타입은 세션 종료 시 같이 소멸되는 "Memory cookie"가 사용된
+4. 서버로부터 발행된 session(데이터)을 통해 개인화(사용자)를 위한 데이터(userInfo 등..)로 활용할 수 있다.
+
+동작순서
+1. 클라이언트(사용자)가 서버로 접속(http 요청)을 시도한다.
+2. 서버(웹)는 접근한 클라이언트의 request-header field인 cookie를 확인해 클라이언트가 해당 session-id를 보내왔는지 확인한다.
+3. 만약 클라이언트로 부터 발송된 session-id가 없다면, 서버는 session-id를 생성해 클라이언트에게 response-header field인 set-cookie 값으로 session-id(임의의 긴 문자열)를 발행(응답)한다.
+* 첫 번째 요청(http) 시 클라이언트로 부터 발송된 session-id 가 없으므로 서버는 session-id를 생성해 클라이언트에게 발행(응답)한다.
+* 두 번째 요청(http) 시 클라이언트는 서버로 부터 발행(응답)된 session-id를 request-header cookie 값으로 포함하고 있다.
+4. 서버로부터 발행(응답)된 session-id는 해당 서버(웹)와 클라이언트(사용자 브라우저) 메모리에 저장된다. 
+이때 사용되는 cookie 타입은 세션 종료 시 같이 소멸되는 "memory cookie"가 사용된다.
+5. 클라이언트 접속 종료(브라우저 닫기 등..) 시 서버에 저장된 session-id(server resource 소유)는 소멸된다.
+
+각 브라우저 별 Session Life Circle
+IE(8 기준):
+1.1 클라이언트가 첫 번째 요청을 시도한다.
+1.2 새로운 탭을 활성화 시킨 후 재 요청을 시도한다.(첫 번째 요청 session-id 값과 동일)
+1.3 새로운 창을 활성화 시킨 후 재 요청을 시도한다.
+- IE(8 기준) 브라우저의 경우 신규 창 활성화 후 재 요청 시 session-id가 변경된 것을 볼 수 있다.(즉, 신규 탭과 달리 신규 창의 경우 서버로 부터 새로운 session(id)을 발급받게 되는 것이다..)
+
+Chrome(버전 23.0.1271.97 m)
+2.1 클라이언트가 첫 번째 요청을 시도한다
+- Chrome 브라우저와 같은 경우 첫 번째 요청 시 다른 브라우저들의 결과와 달리 response-header의 set-cookie값이 아닌 두 번째 요청의 결과와 같은 request-header의 cookie 값으로 session-id가 포함되어있다.
+2.2 새로운 탭을 활성화 시킨 후 재 요청을 시도한다.(첫 번째 요청 session-id 값과 동일)
+2.3 새로운 창을 활성화 시킨 후 재 요청을 시도한다.
+
+
+
+
+
+
+
+
+
+
+
+
