@@ -1,0 +1,61 @@
+JDNI 이유
+WAS에 DB 정보를 설정하면
+
+실제서비스 운영시 웹어플리케이션을 잘 모르는 사람도 쉽게 수정
+또한 1개의 WAS에 n개의 웹어플리션 관계가 많은 것이므로 관리의 편의성
+failOver 관련 DB 장애시 백업 DB로 로드 밸런싱 해야하는데
+이런 기능은 WAS에서 제공
+
+
+적용
+(1) jdbc jar 파일 %TOMCAT%\bin 에 옮겨놓기(ex: ojdbc6.jar)
+(2) server.xml 에서 DataSource 설정 하기
+(example : pool 방식, 일반의 경우 type, factory만 변경됨)
+<GlobalNamingResources>
+	<Resource auth="Container" 
+		name="jdbc/XXX" 
+		type="org.apache.tomcat.jdbc.pool.DataSource" 
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
+		maxActive="100" 
+		minIdle="10" 
+		maxWait="10000" 
+		initialSize="10"
+		validationQuery="SELECT 1 FROM DUAL"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		defaultAutoCommit="false"
+		username="XXXXX" 
+		password="XXXXXX"
+		url="jdbc:oracle:thin:@xxx.xxx.xxx.xx:xxxx:DBNAME"
+	/>  
+  </GlobalNamingResources
+
+
+(3) context.xml에서  링크 설정하기
+<Context>
+<ResourceLink name='jdbc/XXX' type='org.apache.tomcat.jdbc.pool.DataSource' global='jdbc/XXX' />
+</Context>
+
+(4) web.xml에서 참조 설정 하기(web.xml은 tag 순서 참조)
+  <resource-ref>
+    <description>OracleDatasource</description> 
+    <res-ref-name>jdbc/XXX</res-ref-name> 
+    <res-type>org.apache.tomcat.jdbc.pool.DataSource</res-type> 
+    <res-auth>Container</res-auth> 
+  </resource-ref>
+(5) Spring에서 bean 설정 하기(context.xml)
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="java:comp/env/jdbc/XXX"/>
+	</bean>
+	
+	– JDBC : database 의 API (드리이버.jar 에 들어있음) 를 사용하여 DB 쿼리를 하기 위한
+자바의 API. 어떤 database (JDBC 드리이버)를 사용하더라고 사용법은 동일하다.
+> Connection, Statement, ResultSet 등
+
+– JDBC 드라이버 : database 종류마다 내부 API 가 틀리며, 자바에서 이를 인식하기 위해
+JDBC 드라이버를 설치해야한다.
+
+– JNDI : JDBC 를 사용할때, 먼저 Connection 을 얻을때마다 드라이버를 DriverManager에 등록
+(driver 이름,url,사용자정보를 사용해서) 해야 했으나, JNDI 기법을 사용하면
+서버실행시 연동객체를 통해 DriverManager에 드라이버등록해놓고,
+JDBC 사용할때 Connection을 얻는 부분에서 연동객체를 이름으로  찾아서 사용.
+	 
