@@ -1,0 +1,9 @@
+function solution(X, Y, D) {
+    // write your code in JavaScript (Node.js 4.0.0)
+        // write your code in JavaScript (Node.js 4.0.0)
+    var result ;
+    // X + D*result  >= Y
+    result = Math.ceil((Y - X) / D);
+    
+    return result ;
+}
