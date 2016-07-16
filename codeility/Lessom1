@@ -1,0 +1,14 @@
+function solution(N) {
+    // write your code in JavaScript (Node.js 4.0.0)
+    var n = (N).toString(2);
+    var arr = n.split(1);
+    arr.pop();
+    var arrSort = arr.sort(compNumber);
+    
+    return arrSort[arrSort.length-1].length;
+}
+
+// 숫자를 크기순으로 소트할 때, 내부적으로 필요한 함수
+function compNumber(a, b) {
+  return a.length - b.length;
+}
