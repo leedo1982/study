@@ -1,0 +1,11 @@
+function solution(A, K) {
+    // write your code in JavaScript (Node.js 4.0.0)
+    //배열 A 횟수 K    
+    if(A.length < K){
+    	var result = K % A.length ;
+      K = result;      
+    } 
+    
+    var arrFront = A.splice(A.length - K, K);    
+    return arrFront.concat(A);     
+}
