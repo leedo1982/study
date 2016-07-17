@@ -1,0 +1,25 @@
+function solution(A) {
+
+	var totalSum = A.reduce(function(a,b){return a+b;}) 
+	var frontSum = 0;
+	var minNum ;
+	var arrLen = A.length;
+
+	if(arrLen == 2){
+      return Math.abs(A[0] - A[1]);
+	}
+
+	for (var i = 1; i < A.length; i++) {
+		frontSum += A[i-1];
+		var endSum = totalSum - frontSum; 
+		var curMinNum = Math.abs(frontSum - endSum);
+		
+		if(minNum == undefined){
+			minNum = curMinNum ; 	
+		}else{
+			minNum = curMinNum < minNum ? curMinNum : minNum ;
+		}
+	}	
+    
+	return minNum;
+}
