@@ -1,0 +1,16 @@
+	function solution(X, A) {
+		var xSum = X*(X+1)/2;
+		var arrLeaf = [];
+
+		for(var i in A){
+			if(!arrLeaf[A[i]]){
+				arrLeaf[A[i]] = true;
+				xSum = xSum - A[i];
+				if(xSum < 0 || xSum == 0){
+					return +i;
+				}
+				
+			}
+		}
+		return -1 ;
+	}
