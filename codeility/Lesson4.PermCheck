@@ -1,0 +1,21 @@
+    function solution(A) {
+        // write your code in JavaScript (Node.js 4.0.0)
+        var aLen = A.length;
+        var aSum = aLen * (aLen + 1) / 2;
+        var tempArr = [];
+
+        if (aLen == 0) {
+            return 0;
+        }
+
+        for (var i = 0; i < aLen; i++) {
+            if (!tempArr[A[i]]) {
+                tempArr[A[i]] = true;
+                aSum = aSum - A[i];
+                if (aSum == 0) {
+                    return i == (aLen - 1) ? 1 : 0;
+                }
+            }
+        }
+        return 0;
+    }
