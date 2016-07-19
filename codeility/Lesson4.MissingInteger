@@ -1,0 +1,18 @@
+    function solution(A) {
+        // write your code in JavaScript (Node.js 4.0.0)
+        var tempArr = [];
+
+        for (var i = 0; i < A.length; i++) {
+            if (A[i] >= 0 && !tempArr[A[i]]) {
+                tempArr[A[i]] = true;
+            }
+        }
+
+        for (var i = 1; i < tempArr.length; i++) {
+            if (tempArr[i] == undefined) {
+                return +i;
+            }
+        }
+
+        return tempArr.length == 0 ? 1 : tempArr.length;
+    }
