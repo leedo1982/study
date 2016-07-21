@@ -1,0 +1,14 @@
+    function solution(A, B, K) {
+        var start =Math.floor(A/K) ;
+        var end = Math.floor(B/K);
+        var cnt = 0;
+
+        if(A%K == 0){
+            cnt = end-start+1;    
+        }else{
+            cnt = end-start;    
+            
+        }
+
+        return cnt;
+    }
