@@ -1,0 +1,32 @@
+	function solution(S, P, Q) {
+		var arrS = S;
+		var arrResult = [];
+
+		var pre;
+		var cur;
+
+		for ( var i in P) {
+			for (var j = P[i]; j <= Q[i]; j++) {
+				pre = arrResult[i];
+				cur = S[j];
+
+				if (cur == 'A') {
+					arrResult[i] = cur;
+					break;
+				} else if (pre == undefined) {
+					arrResult[i] = cur;
+				} else if (pre > cur) {
+					arrResult[i] = cur;
+				}
+			}
+
+		}
+
+		for (var i = 0; i < arrResult.length; i++) {
+			arrResult[i] = arrResult[i] == 'A' ? 1 : arrResult[i] == 'C' ? 2 : arrResult[i] == 'G' ? 3 : 4;
+
+		}
+
+		return arrResult;
+
+	}
