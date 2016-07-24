@@ -1,3 +1,4 @@
+// 100 / 0
 	function solution(S, P, Q) {
 		var arrS = S;
 		var arrResult = [];
@@ -30,3 +31,43 @@
 		return arrResult;
 
 	}
+
+//  100/ 100
+function solution(S, P, Q) {
+    // write your code in JavaScript (Node.js 4.0.0)
+    var positionOne,
+    positionTwo,
+    factorPerType = {
+        "A":1,
+        "C":2,
+        "G":3,
+        "T":4
+    },
+    prefix = [[0,0,0,0]],
+    Plen = P.length,
+    Slen = S.length,
+    result =[],
+    counterType = [0,0,0,0];
+ 
+    for(var i = 0; i<Slen; i++) {
+        counterType = counterType.concat(); // local copy
+        counterType[factorPerType[S[i]] -1]++;
+        prefix.push(counterType);
+    }
+     
+    for(i=0; i<Plen; i++) {
+        positionOne = P[i] + 1;
+        positionTwo = Q[i]+ 1;
+ 
+        var finalCount =0;
+        for (j = 0; j < 4; j++){
+            finalCount = prefix[positionTwo][j] - prefix[positionOne -1][j];
+            if (finalCount > 0){
+                result.push(j + 1);
+                break;
+            }
+        }
+    }
+  
+    return result;
+}
