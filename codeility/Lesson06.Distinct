@@ -1,0 +1,14 @@
+function solution(A) {
+    // write your code in JavaScript (Node.js 4.0.0)
+            var len = A.length;
+        var nArr = [];
+        var cnt = 0;
+        for( var i in A){
+            
+            if(!nArr[A[i]]){
+                nArr[A[i]] = true;
+                cnt++;
+            }
+        }
+        return 
+}
