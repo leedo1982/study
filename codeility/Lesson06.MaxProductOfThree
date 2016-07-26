@@ -1,0 +1,31 @@
+    function solution(A) {
+        // A 중 최대값 3개 구하고 곱하기
+        var n1,n2,n3;
+        var len = A.length - 1;
+
+        if (A.length === 3) {
+            return A[len] * A[len - 1]* A[len - 2];
+        }
+
+        A.sort(function(a, b) {
+            return a - b
+        })
+
+        n1 = A[len];
+        n2 = A[len - 1];
+        n3 = A[len - 2];
+
+        for (var i = 0; i <= len; i++) {
+            if (A[i] > 0) {
+                if (i >= 2) {
+                    if (A[0] * A[1] > n2 * n3) {
+                        n2 = A[0];
+                        n3 = A[1];
+                    }
+                }
+                break;
+            }
+        }
+
+        return n1 * n2 * n3;
+    }
