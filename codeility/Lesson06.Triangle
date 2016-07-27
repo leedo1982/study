@@ -1,0 +1,32 @@
+    function solution(A) {
+        // write your code in JavaScript (Node.js 4.0.0)
+        var aLen = A.length;
+        var tempArr = [];
+
+        A.sort(function(a,b){
+            
+            return a-b
+        });
+
+        var a,b,c;
+        var cnt = 0;
+        for (var i = 2; i < aLen; i++) {
+            cnt = 0;
+            a = A[i-2];
+            b = A[i-1];
+            c = A[i];
+            if(a + b > c ){
+                cnt++;
+            }
+            if(c + b > a ){
+                cnt++;
+            }
+            if(a + c > a ){
+                cnt++;
+            }
+            if(cnt ==3){
+                return 1;
+            }
+        }
+        return 0;
+    }
