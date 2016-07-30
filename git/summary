@@ -9,5 +9,13 @@ git 을 좀더 깊게 이해해보자.
 
 example1)
 폴더를 만들고 그아래서
-$> git init  -- 새로운 git 저장소가 만들어짐
-$> git clone 
+$ git init  -- 새로운 git 저장소가 만들어짐
+$ git clone https://github.com/leedo1982/study -- github의 study 저장소를 복제
+
+$ git add <file name> --  or * :아직 실제로 변경내용이 확정되지는 않는다.
+$ git commit -m "desc" -- HEAD 에 변경내용 확정 단, 원격저장소에는 미반영
+
+$ git push origin master -- master은 branch 명으로 변경가능
+
+
+
