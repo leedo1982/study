@@ -15,3 +15,38 @@
 		}
 		return cnt;
 	}
+	
+	
+
+//correnctness 100 : performance 100
+copy by http://julienrenaux.fr/2015/04/27/codility-efficient-algorithm-solutions-in-javascript/#NumberOfDiscIntersections
+function solution(A) {
+    var len =  A.length,
+    tupples = [],
+    count =0;
+     
+    for (var i=0; i < len; i++){
+        tupples.push([i - A[i], i + A[i]]);  
+    }
+     
+    // [[5,5], [0,4], [-4, 6]] => [[-4, 6], [0,4], [5,5]]
+    tupples.sort(function(a,b){
+        return a[0] - b[0];
+    });
+ 
+    for (var j=0; j < len; j++){
+        var tupple = tupples[j];
+        for (var k=j+1; k < len; k++){
+            var comparisonTupple = tupples[k];
+            if (comparisonTupple[0] <= tupple[1]){
+                count++;
+                if (count >10000000){
+                    return -1;    
+                }
+            } else {
+                break;    
+            }
+        } 
+    }
+    return count;
+}
