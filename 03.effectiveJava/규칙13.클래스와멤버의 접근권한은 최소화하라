@@ -1,0 +1,37 @@
+잘 설계된 모듈은 구현 세부사항을 전부 API 뒤쪽에 감춘다.
+이 개념은 정보은닉(information hiding) 또는 캡슐화(encapsulation)이란 용어로 알려져 있으며,
+소프트웨어 설계의 기본적인 원칙 가운데 하나다.
+
+정보은닉이 시스템을 구성하는 모듈사이의 의존성을 낮춰서(decouple),
+각자 개별적으로 개발하고, 시험하고, 최적화하고, 이해하고, 변경할 수 있도록한다.
+
+원칙은 단순하다. 각클래스와 멤버는 가능한 한 접근 불가능하도록 만들라는 것.!!!!!
+
+최상위레벨(중첩되지 않은) 클래스와 인터페이스에 부여할 수 있는 접근권한은
+package-private 와 public의 두가지 인다.
+최상위레벨(중첩되지 않은) 클래스와 인터페이스는 가능한 package-private로 선언해야한다.
+public으로 선언하게 되면 호환성을 보장하기 위해 해당 개체를 계속 지원해야한다.
+
+접근권한
+private - 선언된 최상위 레벨 클래스 내보에서만 접근가능
+package-private -  같은 패키지 내의 아무 클래스나 사용. 기본접근권한으로 알려져 있는데, 
+                   멤버를 선언할 때 아무런 접근권한 수정자도 붙이지 않으면, 이권한이 주어지기 때문
+protected - 선언된 클래스 및 그 하위 클래스만 사용할 수 있다. 선언된 클래스와 같은 패키지에 있는 클래스에서도 사용가능
+public - 어디에서도 사용가능
+
+객체 필드(instance field)는 절대로 public으로 선언하면 안된다.
+
+변경 가능 public 필드를 가진 클래스는 다중 스레드에 안전하지 않다.
+길이가 0이 아닌 배열은 언제나 변경가능하므로, public static final 배열 필드를 두거나
+배열필드를 반환하는 접근자(accessor)를 정의하면 안된다.
+//보안을 초래할수 있는 코드
+ public static final Thing[] VALUES = { ...};
+ 
+ // 변경후 코드 :방법1
+ private static final Thing[] PRIVATE_VALUES = { ...};
+ public static final List<Thing> VALUES = Collections.unmodifiableList(Arrays.asList(PRIVATE_VALUES));
+ // 변경후 코드 :방법2
+ private static final Thing[] PRIVATE_VALUES = { ...};
+ public static final Thing[] VALUES(){
+  return PRIVATE_VALUES.clone();
+ }
