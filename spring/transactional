@@ -1,0 +1,23 @@
+spring transactional
+선언적 트랜잭션 정의 방식
+1.<tx:advice> 태그이용
+2.@Transaction 어노테이션 이용
+
+2016년08월04일 오늘은 
+어노테이션 방식을 사용
+sample) @Transactional(propagation=Propagation.REQUIRED, readOnly=false)
+1) 속성
+- propagation : 트랜잭션 전파 규칙 설정, Propagation 열거형 타입에 값이 정의됨(기본값: Propagation.REQUIRED)
+- isolation : 트랜잭션 격릴 레벨 설정
+- readOnly : 읽기 전용 여부설정
+- rollbackFor :  트랙젝션을 롤백할 예외 타입 설정 ex)rollbackFor={Exception.class}
+- noRollbackFor : 트랜젝션을 롤백하지 않을 예외 타입 설정 ex) noRollbackFor={Exception.class}
+- timeout : 트랜젝션의 타임아웃을 초단위로 설정
+
+2) 스프링 빈에 트랜잭션 적용
+<tx:annotation-drive transaction-manager="transctionManager"/>
+
+위 태그 대신 PersistenceAnnotationBeanPostProcessor 클래스를 빈에 등록해도 된다.
+<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
+
+
