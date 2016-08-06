@@ -1,0 +1,37 @@
+
+//이런 저급한 클래스는 절대로 public으로 선언하지 말것
+class Point{
+  public double X;
+  public double Y;
+}
+이런 클래스는 데이터 필드를 직접 조작할 수 있어 캡슐화의 이전을 누릴수 없다.
+
+//접근자 메서드와 수정자를 이용한 캡슐화
+class Point{
+  private double X;
+  private double Y;
+  public Point(double x, double y){
+    this.x = x;
+    this.y = y;
+  }
+  
+  **public double getX(){return x;}**
+  **public double getY(){return y;}**
+  
+  **public void setX(double x){this.x = x;}**
+  **public void setY(double y){this.y = y;}**
+}
+
+public 클래스라면 당연히 굻은글씨와 같이 코딩해야 한다. 
+선언된 패키지밖에서도 사용 가능한 클래스에는 접근자 메서드를 제공하라.
+
+하지만....package-private 클래스나 private 중첩클래스(nested class)는 
+데이터 필드를 공개하더라도 잘못이라 말할 수 없다.(추상화하려는 내용을 제대로 기술하면)
+
+java.awk 패키지에 포함된 Point, Dimension 클래스는 참고하지 않는것이 좋다.
+
+요약하면, public 클래스는 변경가능 필드를 외부로 공개하면 안된다.
+변경 불가능 필드인 경우 외부로 공개하더라도 많이 위험하지 않지만, 그럴필요가 있는지 의문이다.
+
+
+
