@@ -1,0 +1,11 @@
+TRUE  (1) true(boolean)
+      (2) 1(0이아닌 것듯, -1.-1,2,...)
+      (3) string('-',"=")
+      (4) object(array, object, function,...)
+      
+FALSE (1) false(boolean)
+      (2) 0
+      (3) '',""(공백 아님)
+      (4) undefined
+      (5) null
+      (6) NaN
