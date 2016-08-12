@@ -1,0 +1,33 @@
+문자열 연결 연산자 +는 여러 문자열을 하나로 합하는 편리한 수단이나.
+n개의 문자열에 연결 연산자를 반복 적용해서 연결하는데 드는 시간은 , n의2제곱에 비례한다.
+
+문자열은 변경 불가능하기 때문에 문자열 두개를 연결할 때, 그 두문자열의 내용은 전부 복사된다.
+
+//한줄의 문자열을 계속 연결하여 billing statement를 만든다.
+//문자열을 연결하는 잘못된 방법 - 성능이 엉망이다.
+public String statement(){
+ String result = "";
+ for(int i = 0; i < numItems(); i++)
+     result += lineForItem(i); //String concatenation
+  return result;
+}
+
+만족스런 성능을 얻으려면 String 대신 StringBuilder를 써서 저장해야 한다.
+(StringBuilder 클래스는 릴리스 1.5에 추가된 것으로, StringBuffer에서 동기화 기능을 뺀겻이다. StringBuffer은 이제 지원되지 않는다.)
+public String statement(){
+ StringBuilder b - new StringBuilder(numItems()* LINE_WIDTH);
+ for(int i = 0; i < numItems(); i++)
+     b.append( lineForItem(i));
+  return b.toString();
+}
+
+성능의 차이는 실로 엄청나다. numItems가 100을 반환하고 lineForItem이 80문자로 구성된 문자열을 반환하는 경우
+첫번째 메서드 보다 약 85배 빠르다.(컴퓨터 성능에따라 오차 있음)
+
+항목의 개수가 많아지면 성능 차이는 명확해진다.
+두번째 메서드가 충분한 크기의 StringBuilder 객체를 미리 할댕해 두고 있음에 유의
+
+
+원칙은 간단하다. 성능이 걱정된다면 많은 문자열을 연결할 때 +연산자 사용은 피하라.
+대신 StringBuilder의 append 메서드를 사용하다. 
+문자열을 사용하거나, 문자열을 연결하는 대신 순차적으로 처리하는 방법을 쓸수도 있다.
