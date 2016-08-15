@@ -1,0 +1,29 @@
+모든 enum에는 ordinal이라는 메서드가 있는데, enum 자료형 안에서 enum 상수의 위치를 나타내는 정수값을 반환한다.
+그러니 ordinal메서드를 통해 enum 상수에 대응되는 정수값을 구하면 편리하지 않을까 생각할 수도 있다.
+
+//ordinal을 남용한 사례 - 따라하면 곤란
+public enum Ensemble {
+  SOLO, DUET, TRIO, QUARTET, QUINTET, SEXTET, SEPTET, OCTET, NONET, DECTET;
+  
+  public int numberOfMusicians(){ return ordinal()+1}
+}
+
+유지보수 관점에서 끔찍한 코드다. 상수 순서를 변경하는 순간 깨지고 만다.
+게다가 이미 사용한 정수 값에 대응되는 새로운 enum 상수를 정의하는 것은 불가능 하다. 
+
+원칙은,  enum 상수에 연계되는 값을 ordinal을 사용해 표현하지 말라는 것이다. 
+그런 값이 필요하다면 그대신 객체필드(instance field)에 저장해야 한다.
+
+public enum Ensemble {
+  SOLO(1), DUET(2), TRIO(3), QUARTET(4), QUINTET(5), SEXTET(6), SEPTET(7),
+  OCTET(8), DOUBLE_QUARTET(8), NONET(9), DECTET(10), TRIPLE_QUARTET(8);
+  
+  public final int numberOfMusicians();
+  Ensemble(int size){ this.numberOfMusicians = size;}
+  public int numberOfMNusicians(){return numberOfMusicians;}
+}
+
+자바의 Enum 관련 명세를 보면, ordinal에 대해 이렇게 설명되어 있는 것을 확인할 수 있다.
+"대부분의 프로그래머는 이 메서트를 사용할 일이 없을 것이다. EnumSet이나 EnumMap처럼 
+일반적인 용도의 enum 기반 자료 구조에서 사용할 목적으로 설계한 메서드다."
+그런 자료구조를 만들 생각이 없다면, ordinal 메서드는 사용하지 않는 것이 최선이다.
