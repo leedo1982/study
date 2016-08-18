@@ -1,0 +1,68 @@
+커링(currying)은 인자를 여러개 받는 함수를 분리하여, 
+인자를 하나 받느 ㄴ함수의 체인(chain)으로 만드는 방법이다. 
+
+Haskell Curry이 정리
+
+헤스켈에서 다음과 같은 transfer 함수 가 있다고 하자.
+Account, Account, Int 타입의 인자를 받고 IO()를 리턴하는 함수다
+
+Account-> Account-> Int -> IO()
+
+그런데 헤스켈에서는 함수가 일급객체(First Class Object)이고 -> 결합 방향이 오른쪽임을 고려 하면 아래와 같이 이해할 수 있다.
+
+// Account 를 인자로 받아 
+// (Account -> (Int -> IO ()))) 를 리턴
+
+(Account -> (Account -> (Int -> IO ()))) 
+
+이런식으로 분해하다보면 3개의 인자를 받는다고 생각했던 transfer 함수를 1개의 인자를 받는 3개의 함수로 분리할 수 있다.
+
+하스켈 공식 폼페이지의 커링
+f :: a -> b -> c
+// is the curried form of
+g :: (a, b) -> c
+
+// You can convert these two types in either directions with the Prelude functions curry and uncurry.
+f = curry g
+g = uncurry f
+하스켈에선 모든 함수가 curried 되어 있단다.
+
+javascript Curring Example
+
+var sum = function(a,b){
+    return a+b;
+}
+
+sum 함수를 재활용 할 수 있도록 커링 해보자!
+인자인 a를 고정시켜 sum15, sum6 과 같은 함수를 만들수 있다.
+단 기본적으로 자바스크립트에는 curry  함수가 없으므로 새로 만들자.
+이왕이면 모든 함수가 사용할 수 있게 프로토 타입에
+
+Function.prototype.curry = function(){
+  var slice = Array.prototype.slice;
+  var args = slice.apply(arguments);
+  var that = this;
+  return function(){ 
+    return that.apply(null, args.concat(slice.apply(arguments)));
+}
+
+이제 sum 재활용가능
+var sum15 = sum.curry(15);
+var sum2 = sum.curry(2);
+
+sum15(3); //return 18
+sum2(13); //return 15
+
+분석 ::::
+var sum5 = sum.curry(5)를 호출하는 시점에서, 위함수의 args = [5]다.
+여기에 that이라는 변수에 sum 컨텍스트가 가게 된다.
+sum5(7)을 호출하는 시점에는 args[5]에 sum5의 argument인 [7]이 붙어 that.apply([5,7])이 된다.
+
+그런데 사실 that는 sum 컨텍스트 이므로 sum([5,7])이다.
+
+
+
+
+
+thanks for you!
+출처 : http://anster.tistory.com/144
