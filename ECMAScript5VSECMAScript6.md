@@ -100,9 +100,44 @@ callbacks[1]() === 2;
 callbacks[2]() === 4;
 
 
-
+```
+####2.Block-Scoped Fucntion  
+호스팅 없는 Block-scoped 함수
 
 ```
+-ES6
+{
+    function foo () { return 1 }
+    foo() === 1
+    {
+        function foo () { return 2 }
+        foo() === 2
+    }
+    foo() === 1
+}
+
+-ES5
+//  only in ES5 with the help of block-scope emulating
+//  function scopes and function expressions
+(function () {
+    var foo = function () { return 1; }
+    foo() === 1;
+    (function () {
+        var foo = function () { return 2; }
+        foo() === 2;
+    })();
+    foo() === 1;
+})();
+
+```
+
+
+
+
+
+
+
+
 
 
 ---
