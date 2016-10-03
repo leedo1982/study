@@ -6,6 +6,7 @@
 >        영어 읽기/쓰기(회화 위주 : 지하철로 오가는 시간을 활용)
 >        영단어 :  word power made easy(lesson 별로 공부) : 20160805~
 >        Java 8, 9 (2017년 3월 출시 예정) - 함수형 코딩 패턴 중심으로
+>              book : effective Java 2nd
 >        javascript 
 >              book : 자바스크립드 핵신가이드(완료), 자바스크립드 완벽가이드(속독 1회, 정독 예정)
  
