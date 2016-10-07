@@ -1,0 +1,92 @@
+열거 자료형(enumerated type)은 고정 개수의 상수들로 값이 구성되는 자료형이다.
+
+int enum patten
+
+public static final int APPLE_FUJI = 0 ;
+public static final int APPLE_PIPPIN = 0 ;
+
+이 패턴의 변종 가운데 int 대신 String 상수를 사용하는 것을 String enum 패턴으로 불리는데, 더 나쁜 패턴이다.
+다행이 1.5부터 int와 String enum 패턴의 문제점을 해소하는 대안으로 
+enum 자료형이라 불리는 것이 생김
+
+간단한 예제
+public enum Apple { FUJI, PIPPIN, GRANNY_SMITH }
+
+자바의 enum 자료형은 완전한 기능을 갖춘 클래스로 다른 언어의  enum 보다 강력하다.
+다른 언어들의 enum 은 결국 int 값이다. 
+
+자바의 enum 자료형 이면에 감춰진 기본 아이디어는 단순하다. 
+열거 상수별로 하나의 객체를 public static final 필드 형태로 제공하는 거이다.
+
+enum 자료형은 실질적으로는  final로 선언된 것이나 마찬가지이다. 클라이언트가 접근할 수 있는 생성자가 없기 때문이다.
+
+enum 자료형은 새료운 객체를 생성하거나 계승을 통해 확장할 수 없기 때문에, 이미 선언된 enum 상수 이외의 객체는 사용할 수없다.
+다시 말해서, enum 자료형의 개체 수는 엄격히 통제 된다.
+enum 자료형은 싱글턴 패턴을 일반화한 것으로, 싱글턴 패턴은 본질적으로 보면 열거 상수가 하나뿐인 enum 과 같다.
+
+enum 자료형은 같은 이름의 상수가 평화롭게 공준할 수 있도록 이름 공간이 분리되어있다.
+상수를 추가하거나 순서를 변경해도 클라이언트는 다시 컴파일할 필요가 없다.
+상수를 제공하는 필드가 enum 자료형과 클라이언트 사이에서 격리 계층 구실을 하기 때문이다.
+
+enum 자료형에 메서드나 필드를 추가 할수 있다. enum 자료형은 enum 상수 묶음에서 출발해서 점차로 완전한 기능을 갖춘 추상화 단위로 진화해 나갈 수 있다.
+
+
+// 데이터와 연산을 구비한 enum 자료형
+public enum Planet{
+	MERCURY(3.302e+23, 2,439e6),
+	VENUS  (4.869e+23, 2,439e6),
+	EARTH  (5.302e+23, 2,439e6),
+	MARS   (3.302e+23, 2,439e6),
+	JUPITER(3.302e+23, 2,439e6),
+	SATURN (3.302e+23, 2,439e6),
+	URANUS (3.302e+23, 2,439e6),
+	NEPTUNE(3.302e+23, 2,439e6);
+	
+	private final double mass ; 		 // 킬로그램 단위
+	private final double radius ;   	 // 미터단위 
+	private final double surfaceGravity; // m / s^2
+
+	// 중력상수(m^3/kg s^2)
+	private static final double G = 6.67300E-11;
+	
+	//Constructor
+	Plant(double mass, double rarius){
+		this.mass = mass ;
+		this.radius = radius ;
+		surfaceGrabity = G * mass / (radius * radius);
+	}
+	
+	public double mass()           {return mass;}
+	public double radius()         {return radius;}
+	public double surfaceGrabity() {return surfaceGrabity;}
+	
+	public double surfaceGrabity(double mass){
+		return mass * surfaceGrabity; // F = ma
+	}
+}
+
+Planet  처럼 풍부한 기능을 갖춘 enum 자료형을 만드는 것은 간단하다.
+enum 상수에 데이터를 넣으려면 객체 필드를 선언하고 생성자를 통해 받은 데이터를 그 필드에 저장하면 된다.
+
+public class WeightTable{
+	public static void main(Stirng[] args){
+		double earthWeight = Double.parseDouble(args[0]);
+		double mass = earthWeight / Planet.EARTH.surfaceGrabity();
+		for( Plant p : Planet.values()){
+			System.out.printf("Weignt on %s is %f%n", p, p,surfaceWeight(mass));
+		}		
+	}
+}
+
+일반 클래스와 마찬가지로, enum에 정의한 메서드를 클라이언트에게 까지 공개할 특별한 이유가 없다면 private나 package-private로 선언하라
+
+일반적으로 유용하게 쓰일 enum 이라면, 최상위 public 클래스로 선언해야한다.
+
+언제 enum을 써야하는가?! 고정된 상수 집합이 필요할때
+		
+		
+요악하자면, enum 자료형은 int 상수에 비해 많은 중요한 장점을 가지고 있다. enum을 사용한 코드는 가독성이 높고 안전하며, 더 강력하다.
+상당수의 enum은 생성자나 멤머가 필요 없으나, 데이터 또는 그 데이터에 관계된 메서드를 추가해서 기능을 향상시킨 enum도 많다.
+드물게는 동일한 메서드가 상수별로 다르게 동작하도록 만들어야하는 enum도 많다. 
+이려한 enum을 만들때는 switch 문 대신 상수별 메서드를 구현하기 바란다. 여러 enum 상수가 공통 기능을 이용해야 하는 일이 생길때는
+정책 enum 패턴 사용을 고려하기 바란다.
