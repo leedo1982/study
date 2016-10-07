@@ -1,0 +1,78 @@
+문자열은 값 자료형(value type)을 대신하기에 부족하다. 
+
+일반적으로 말하자면, 적절한 값 자료형이 있다면 그것이 기본 자료형이건 아니면 객체 자료형이건 상관없이 해당 자료형을 사용해야한다.
+적당한 자료형이 없다면 새로 만들어야 한다.
+
+문자열은  enum 자료형을 대신하기에는 부족하다. enum 은 문자열 보다 훨씬 좋은 열거 자료형 상수 들을 만들어 낸다.
+
+문자열은 혼합 자료형(aggregate type)을 대신하기엔 부족하다. 여러 컴포넌트가 있는 개체를 문자열로 표현하는 것은 좋은생각이 아니다.
+
+// 문자열을 혼합 자료형으로 써먹은, 부적절한 사례
+String compoundKey = className + "#" + i.next();
+
+이런 접근법에는 많은 문제가 있다. 
+필드 구분자로 사용한 문자가 필드안에 들어가버리면 문제가 생긴다.
+게다가 각 필드를 사용하려고 하면 문자열을 파싱해야하는데, 느릴 뿐더러 멍청하고 오류 발생가능성도 높은 과정이다.
+equals, toString, compareTo 메서드 같은 것도 제공할 수 없고, String이 제공하는 기능들만 사용해야 한다.
+혼합 자료형을 표현할 클래스를 만드는 편이 더 낫다
+
+문자열은 권한을 표현하기에는 부족하다.
+때로, 문자열을 사용해서 기능 접근 권한을 표현하는 경우가 있다. 스레드 지역변수 기능을 설계하는 경우를 예로 들어보자.
+스레드 마다 다른 변수를 제공하는 기능이다. 
+
+// 문자열을 권한으로 사용하는, 잘못된 예제
+public class ThreadLocal {
+	private ThreadLocal() { } // 객체를 만들 수 없다.
+	
+	// 주어진 이름이 가리키는 스레드 지역 변수의 값 설정.
+	public static void set(String key, Object value);
+	
+	// 주어진 이름이 가리키는 스레드 지역 변수의 값 반환
+	public static Object get(String key);
+}
+이 접근법의 문제는, 문자열이 스레드 지역 변수의 전역적인 이름공간이라는 것이다. 위접근법이 통하려면 클라이언트가 제공하는 문자열 키의 유일성이 보장되어야 한다.
+
+위 API의 문제는 문자열 대신 위조 불가능 키로 바꾸면 해결된다.(이런 키를 때로 권한 이라고 부른다)
+
+public class ThreadLocal {
+	private ThreadLocal() { } // 객체를 만들 수 없다.
+	
+	public static class Key { // 권한
+		Key() { }
+	}
+	// 유일성이 보장되는 위조 불가능 키를 생성
+	public static Key getKey(){
+		return new Key();
+	}
+	
+	public static void set(Key key, Object value);
+	public static Object get(Key key);
+}
+
+이 방법이 문자열 기반 API의 두가지 문제를 전부 해결하긴 하지만, 아직 개선의 여지가 있다.
+정적메서드들은 사실 더이상 필요없다. 키의 객체 메서드로 만들수 있다. 
+그렇게 하고 나면 키는 더이상 스레드 지역변수의 키가 아니라, 그것 자체가 스레드 지역변수가 된다.
+
+public final calss ThreadLocal{
+	public ThreadLocal();
+	public void set(Object value);
+	public Object get();
+}
+
+그런데 이 API는 스레드 지역 변수에서 값을 꺼낼때 Object에서 실제 자료형으로 형변환으로 해야 하므로 형 안전성을 보장하지 못한다.
+애초의 String 기반 API는 형 안정적으로 만들수 없고, Key 기반의 API는 형 안정적으로 만들기가 어렵다.
+하지만 위의 API는 제네릭으로 선언하기만 하면 간단하게 형 안전성을 보장하는 API로 만들수 있다.
+
+
+public final calss ThreadLocal<T> {
+	public ThreadLocal();
+	public void set(T value);
+	public T get();
+}
+
+개략적으로 이것이 java.lang.ThreadLocal이 제공하는 API다. 문자열 기반의 API의 문제를 해결할 뿐 아니라, 키기반 API 보다 빠르고 우아하다.
+
+
+요약하자면, 더 좋은 자료형이 있거나 만들 수 있을때는 객체를 문자열로 표현 하는 것은 피하라.
+제대로 쓰지 못할 경우 문자열은 다른 자료형에 비해 다루기 성가시고, 유연성도 떨어지며, 느리고 , 오류 발생 가능성도 높다.
+문자열이 적합하지 못한 자료형으로는 기본 자료형, enum, 혼합 자료형이 있다.
