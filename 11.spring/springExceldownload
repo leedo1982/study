@@ -1,0 +1,292 @@
+. pom.xml  추가
+
+        <!-- 엑셀파일 읽기 poi 2007년 이전버전 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.13</version>
+        </dependency>
+        <!-- 엑셀파일 읽기 poi 2007년 이후버전 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.13</version>
+        </dependency>
+
+1. servlet-context.xml 추가
+
+    <!-- View resolver 이것이 order 우선 -->
+    <beans:bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+        <beans:property name="order" value="1" />
+    </beans:bean> 
+    
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+    <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <beans:property name="prefix" value="/WEB-INF/views/" />
+        <beans:property name="suffix" value=".jsp" />
+        <beans:property name="order" value="2" />
+    </beans:bean>
+    
+    <!-- "excelDownload" 설정 -->
+    <beans:bean id="excelDownload" class="com.hanon.pgreport.common.util.ExcelDownloadView">
+    </beans:bean>    
+
+2.ExcelDownloadView 추가
+
+import java.math.BigDecimal;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFDataFormat;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.servlet.view.AbstractView;
+
+public class ExcelDownloadView extends AbstractView {
+    private static final Logger logger = LoggerFactory.getLogger(ExcelDownloadView.class);
+
+	@Override
+	protected final void renderMergedOutputModel(Map<String, Object> model, HttpServletRequest req, HttpServletResponse res) throws Exception {
+		logger.info("renderMergedOutputModel");
+
+		String userAgent = req.getHeader("User-Agent");
+		String fileName = (String) model.get("fileName");
+
+		if (userAgent.indexOf("MSIE") > -1) {
+			fileName = URLEncoder.encode(fileName, "utf-8");
+		} else {
+			fileName = new String(fileName.getBytes("utf-8"), "iso-8859-1");
+		}
+
+		res.setContentType("Application/Msexcel");
+		res.setHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\";");
+		res.setHeader("Content-Transfer-Encoding", "binary");
+
+		ServletOutputStream out = null;
+		try {
+			XSSFWorkbook workbook = new XSSFWorkbook();
+
+			// xlsx 용
+			buildXlsxDocument(model, workbook, req, res);
+
+			out = res.getOutputStream();
+			workbook.write(out);
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			if (out != null)
+				out.close();
+		}
+	}
+
+	protected void buildXlsxDocument(Map<String, Object> model, XSSFWorkbook workbook, HttpServletRequest req, HttpServletResponse res) throws Exception {
+		System.out.println("---- ExcelDownloadView.buildExcelDocument() ----");
+
+		@SuppressWarnings("unchecked")
+		ArrayList<String> headerNames =  (ArrayList<String>)model.get("headerNames");
+		@SuppressWarnings("unchecked")
+		ArrayList<HashMap<String, Object>> list = (ArrayList<HashMap<String, Object>>) model.get("resultSet");
+
+		Sheet sheet = workbook.createSheet();
+
+		XSSFCellStyle style = getDateStyle(workbook);
+		Row row = sheet.createRow(0);
+
+		for (int i = 0; i < headerNames.size(); i++) {
+			Cell headerCell = row.createCell(i);
+			Object v = headerNames.get(i);
+			addCell(headerCell, style, v);
+		}
+
+		// DB에서 조회한 값을 적용
+		for (int j = 0; j < list.size(); j++) {
+			row = sheet.createRow(j + 1);
+			Map<String, Object> dsmap2 = list.get(j);
+
+			for (int i = 0; i < headerNames.size(); i++) {
+				Cell cell = row.createCell(i);
+				Object v = dsmap2.get(headerNames.get(i));
+				addCell(cell, style, v);
+			}
+		}
+
+	}
+
+	private final XSSFCellStyle getDateStyle(XSSFWorkbook wb) {
+		XSSFCellStyle style = wb.createCellStyle();
+		XSSFDataFormat dataFormat = wb.createDataFormat();
+		String dateFormat = null;
+		if (dateFormat == null) {
+			dateFormat = "yyyy-MM-dd";
+		}
+		short styleDateFormat = dataFormat.getFormat(dateFormat);
+		style.setDataFormat(styleDateFormat);
+		return style;
+	}
+
+	private void addCell(Cell cell, XSSFCellStyle dateStyle, Object v) {
+		if (v instanceof Integer) {
+			cell.setCellValue((Integer) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+		} else if (v instanceof Double) {
+			cell.setCellValue((Double) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+		} else if (v instanceof Date) {
+			cell.setCellValue((Date) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+			cell.setCellStyle(dateStyle);
+		} else if (v instanceof BigDecimal) {
+			cell.setCellValue(((BigDecimal) v).intValue());
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+		} else {
+			cell.setCellValue((String) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+		}
+	}
+}
+import java.math.BigDecimal;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFDataFormat;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.servlet.view.AbstractView;
+
+public class ExcelDownloadView extends AbstractView {
+    private static final Logger logger = LoggerFactory.getLogger(ExcelDownloadView.class);
+
+	@Override
+	protected final void renderMergedOutputModel(Map<String, Object> model, HttpServletRequest req, HttpServletResponse res) throws Exception {
+		logger.info("renderMergedOutputModel");
+
+		String userAgent = req.getHeader("User-Agent");
+		String fileName = (String) model.get("fileName");
+
+		if (userAgent.indexOf("MSIE") > -1) {
+			fileName = URLEncoder.encode(fileName, "utf-8");
+		} else {
+			fileName = new String(fileName.getBytes("utf-8"), "iso-8859-1");
+		}
+
+		res.setContentType("Application/Msexcel");
+		res.setHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\";");
+		res.setHeader("Content-Transfer-Encoding", "binary");
+
+		ServletOutputStream out = null;
+		try {
+			XSSFWorkbook workbook = new XSSFWorkbook();
+
+			// Doing
+			buildXlsxDocument(model, workbook, req, res);
+
+			out = res.getOutputStream();
+			workbook.write(out);
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			if (out != null)
+				out.close();
+		}
+	}
+
+	protected void buildXlsxDocument(Map<String, Object> model, XSSFWorkbook workbook, HttpServletRequest req, HttpServletResponse res) throws Exception {
+		System.out.println("---- ExcelDownloadView.buildExcelDocument() ----");
+
+		@SuppressWarnings("unchecked")
+		ArrayList<String> headerNames =  (ArrayList<String>)model.get("headerNames");
+		@SuppressWarnings("unchecked")
+		ArrayList<HashMap<String, Object>> list = (ArrayList<HashMap<String, Object>>) model.get("resultSet");
+
+		Sheet sheet = workbook.createSheet();
+
+		XSSFCellStyle style = getDateStyle(workbook);
+		Row row = sheet.createRow(0);
+
+		for (int i = 0; i < headerNames.size(); i++) {
+			Cell headerCell = row.createCell(i);
+			Object v = headerNames.get(i);
+			addCell(headerCell, style, v);
+		}
+
+		// DB에서 조회한 값을 적용
+		for (int j = 0; j < list.size(); j++) {
+			row = sheet.createRow(j + 1);
+			Map<String, Object> dsmap2 = list.get(j);
+
+			for (int i = 0; i < headerNames.size(); i++) {
+				Cell cell = row.createCell(i);
+				Object v = dsmap2.get(headerNames.get(i));
+				addCell(cell, style, v);
+			}
+		}
+
+	}
+
+	private final XSSFCellStyle getDateStyle(XSSFWorkbook wb) {
+		XSSFCellStyle style = wb.createCellStyle();
+		XSSFDataFormat dataFormat = wb.createDataFormat();
+		String dateFormat = null;
+		if (dateFormat == null) {
+			dateFormat = "yyyy-MM-dd";
+		}
+		short styleDateFormat = dataFormat.getFormat(dateFormat);
+		style.setDataFormat(styleDateFormat);
+		return style;
+	}
+
+	private void addCell(Cell cell, XSSFCellStyle dateStyle, Object v) {
+		if (v instanceof Integer) {
+			cell.setCellValue((Integer) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+		} else if (v instanceof Double) {
+			cell.setCellValue((Double) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+		} else if (v instanceof Date) {
+			cell.setCellValue((Date) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+			cell.setCellStyle(dateStyle);
+		} else if (v instanceof BigDecimal) {
+			cell.setCellValue(((BigDecimal) v).intValue());
+			cell.setCellType(HSSFCell.CELL_TYPE_NUMERIC);
+		} else {
+			cell.setCellValue((String) v);
+			cell.setCellType(HSSFCell.CELL_TYPE_STRING);
+		}
+	}
+}
+
+
+
+3. JSP에서 호출!
+function exceldownload(){
+    var params = "?" + "year=2015"); 
+        params += "&" + "month=08";
+    location.href = "<c:url value='/exceldownload'/>" + params;
+}
