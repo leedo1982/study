@@ -24,6 +24,8 @@
 >       Git / GitHub
  
 (6) 기본기 : 
+>         네트워크
+>                 book : 그림으로 배우는 HTTP&네트워크
 >         알고리즘 
 >                 book(site) lavida.us : 알고리즘 관련 문제풀기(지속)
 >         정규표현식
