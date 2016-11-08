@@ -1,0 +1,58 @@
+람다 표현식은 이름이 없는 익명 함수를 의미
+람다에 관심을 두어야 하는 이류
+1.OOP언어인 JAVA 에서 함수형 코드를 작성할 수 있게 해 준다.
+2. 람다 표현식을 이용함으로써 간결하고 명확한 코드로 그 의도를 표현할 수 있다.
+3. Collection filtering, Iteration, Extraction 등 놀라운 코드 생산성 보임
+
+람다의 특짐
+1.익명 : 보통의 메서드와 달리 이름이 없으므로 익명이라 표현, 코드를 간결하게 작성함으로 인하여 구현해야 할 코드에 대한 걱정거리가 줄어든다.
+2. 함수 : 람다는 메서드처럼 특정 클래스에 종속되지 않으므로 함수라고 부른다. 하지만 메서드처럼 파라미터리스트, 바디, 반환형식, 가능한 예외리스트를 포함한다.
+3. 전달 : 람다 표현식을 메서드 인수로 전달하거나 변수로 저장할 수 없다.
+4. 간결성 : 익명 클래스에서와 같은 자질구레한 코드를 구현할 필요가 없다.
+
+기본적인 람다 표현식에 대한 문법
+(agument ,,,) -> (body) : 0가 이상의 인자를 실행하고자 하는 함수 body로 전달한다는 의미
+
+람다는 크게 세부분으로 이루어진다.
+- 파라미터 리스트 : xxx메서드의 파라미터() : (int a, int b)
+- 화살표 : 화살표( -> )는 람다의파라미터 리스트와 바디를 구분한다.
+- 람다의 바디 :  담다의 반환 값에 해당하는 표혁식
+
+예)
+1. 먼저 인자가 없는 메소드를 갖는 인터페이스를 만들어 둔다.
+MyInter.java
+public interface MyInter{
+	void abc();
+}
+
+2. 인자가 있는 메소드를 갖는 인터페이스를 만들어 둔다.
+MyInterArg.java
+public interface MyInterArg{
+	void def(int a, int b);
+}
+
+3. 프로그램을 실행하기 위한 클래스 작성
+Main.java
+
+public class Main{
+	public static void main(String[] args){
+		MyInter inter = new MyInter(){
+			@Override
+			public void abc(){
+				System.out.pringln("일반적인 익명 클래스의 메소드 오버라이딩");	
+			}
+		};
+	
+		inter.abc(); // 무명 클래스의 메소드 호출
+		
+		
+		//람다식으로 표현
+		MyInter inter2 = () -> System.out.pringln("람다식으로 표현");
+		inter2.abc(); // 람다로 표현된 메소드 호출
+		
+		
+		// 인자가 있는 추상메소드 처리
+			
+		MyInterArg interArg2 = (a, b) -> System.out.pringln("람다식으로 표현:"+(a+b));
+		interArg2.def(3,4); // 인자가 있는 람다로 표현된 메소드 호출
+}
