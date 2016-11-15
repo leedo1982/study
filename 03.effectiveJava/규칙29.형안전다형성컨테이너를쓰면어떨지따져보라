@@ -1,0 +1,60 @@
+
+규칙 29. 형 안전 다형성 컨테이너를 쓰면 어떨지 따져보라
+
+제네릭은  Set나 Map 같은 컬렉션과 ThreadLocal, AtomicReferenct 처럼 하나의 원소만을 담는 컨테이너에 가장 많이 쓰인다.
+이때 형인자를 받는 것은 컨테이너 구실을 하는 부분이다. 
+
+하지만 좀더 유연한 방법이 필요할 때도 있다.
+다행이도 쉬운 해결챙이 하나 있다. 컨테이너 대신 키(key)에 형인자를 지정하는 것이 기본적 아이디어다.
+그런 다음 컨테이너에 값을 넣거나 뺄때마다 키를 제공하는 것이다. 
+값의 자료형이 키의 자료형에 부합하도록 하는 것은 제네릭 자료형 시스템을 통해 처리한다.
+
+자바 1.5부터 Class가 제네릭 클래스가 되었으며로 가능하다.
+class 리터럴의 자료형은 더이상 Class가 아니며 Class<T> 이다.
+예를 들어 String.class의 자료형은 Class<String>
+
+Favorites 클래스의 API는 단순하다. 형인자가 지정되는 곳이 키라는 것만 제하면 간단한 Map같아 보인다. 이 API를 사용하는 클라이언트는 좋아하는 객체를 넣거나 뺄때 Class 객체를 함께 전달해야한다.
+
+// 형 안전 다형성  컨테이너 패턴 - API
+public class Favorites{
+	public <T> void putFavorite(Class<T> type, T instance);
+	public <T> getFavorite(Class<T> type);
+}
+
+// 형 안전 다형성 컨테이너 패턴 - 클라이언트
+public static void main(String[] args){
+
+	Favorites f = new Favorites();
+	f.putFavorite(String.class, "Java");
+	f.putFavorite(Integer.class, 0xcafebabe);
+	f.putFavorite(Clacc.class, Favorites.class);
+	
+	String favoriteString = f.getFavorite(String.class);
+	int favoriteInteger = f.getFavorite(Integer.class);
+	Class<?> favoriteClass =  f.getFavorite(Class.class);
+}
+
+// 형 안전 다형성  컨테이너 패턴 - 구현
+public class Favorites{
+	private Map<Class<?>, Object> favorites> favorites = new HashMap<Class<?>, Object>();
+
+	public <T> void putFavorite(Class<T> type, T instance){
+		if(type == null){
+		throw new NullPointerException("Type is null");
+		}
+		favorites.put(type, instance);
+	}
+	
+	public <T> getFavorite(Class<T> type){
+		return type.case(favorites.get(type));	
+	}
+}
+
+cast 메서드는 자바의 형변환 연산자의 동적 버전이다.
+Class 객체가 나타내는 자료형의 객체인지를 검사하여 맞으면 주어진 객체를 반환하고, 그렇지 않으면 ClassCaseException을 던진다.
+
+결론적으로, 컬렉션 API를 통해 확인할 수 있는 제네릭의 일반 용번에 따르면, 컨테이너별로 형인자 개수는 고정되어 있다.
+그런데 컨테이너 대신 키를 제네릭으로 만들면 그런 제약이 없는 형 안전 다형성 컨테이너를 만들 수 있다.
+그런 컨테이너는 Class 객체를 쓰는데, 그런 Class 객체를 자료형 토큰이라 부른다. 키 자료형을 직접 구현하는 것도 가능하다.
+예를 들어, 데이터베이스 레코드를 표현하는 DatabaseRow 클래스의 경우(컨테이너), 제네릭자료형 Column<T>를 키로 사용할 수 있다.
+
