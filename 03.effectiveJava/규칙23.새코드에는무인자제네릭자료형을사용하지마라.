@@ -1,0 +1,63 @@
+선언부에 형인자가 포함된 클래스나 인터페이스는 제네릭 클래스나 인터페이스라고 부른다.
+릴리스 1.5부터 List인터페이스에는 리스트에 보관될 원소의 자료형을 나타내는 형인자 E가 도입되었다.
+제네릭 클래스와 인터페이스는 제네릭자료형이라 부른다.
+
+각 제네릭 자료형은 형인자 자료형 집합을 정의한다.
+
+마지막으로, 각 제네릭 자료형은 새로운 무인자 자료형을 정의하는데, 무인자 자료형은 실형인자 없이 사용되는 제네릭 자료형이다.
+예를 들어 List<E>의 무인자 자료형은 List다.
+
+오류는 가능한 빨리 발견되어야 하며, 컴파일 할 때 발견할 수 있으면 가장 이상적이다.
+
+무인자형 자료형을 쓰면 형 안전성이 사라지고, 제네릭의 장점 중 하나인 표현력 측면에서 손해를 보게 된다.
+
+새로만든 코드에서는 List와 같은 무인자 자료형을 쓰면 안 되지만, 아무 객체나 넣을 수 있는 List<Object> 같은 자료형은 써도 된다.
+
+// 원소 자료형을 모르므로 무인자 자료형 사용 - 이러면 곤란
+static int numElementsInCommon(Set s1, Set s2){
+	int result = 0;
+	for(Object o1 : s1)
+		if(s2.contains(o1))
+			result++;
+	return result;
+}
+
+// 비한정 와일드카드 자료형 - 형 안전성과 유연성 만족
+static int numElementsInCommon(Set<?> s1, Set<?> s2){
+	int result = 0;
+	for(Object o1 : s1)
+		if(s2.contains(o1))
+			result++;
+	return result;
+}
+
+비한정적 와일드카드 자료형 Set<?>과 무인자자료형 Set의 차이는 간단히 말해 형의 안전성 차이이다. 
+무인자 자료형 컬력센에는 아무 객체나 넣을 수 있어서, 컬렉션의 자료형 불변식이 쉽게 깨진다.
+그러나 Collection<?>에는 null 이외의 어떤 원소도 넣을 수 없다.
+
+예외 두가지
+첫번째, 클래스 리터럴에는 반드시 무인자 자료형을 사용해야 한다.
+        List.class, String[].class, int.class는 가능하지만
+        List<String>.class나 List<?>.class는 사용할 수 없다.
+
+두번째, instanceof 연산자 사용 규칙에 관한 것이다. 제네릭 자료형 정보는 프로그램이 실행될 때는 지워지기 때문에,
+        instanceof 연산자는 비한정적 와일드카드 자료형 이외의 형인자 자료형에 적용할 수 없다.
+        
+    	제네릭 자료형에 instanceof 연산자를 적용할 때는 다음과 같이 하는 것이 좋다.
+    	
+    	//instanceof 연산자는 무인자 자료형을 써도 OK
+    	if(o instanceof Set){
+    		Set<?> m = (Set<?>) o;
+    	}
+
+형인자 자료형   List<String>
+실 형인자       String
+제네릭 자료형   List<E>
+형식 형인자     E
+비한정적 와일드 카드 자료형 List<?>
+무인자 자료형               List
+한정적 형인자               <E extends Number>
+재귀적 형한정               <T extends Comparable<T>>
+한정적 와일드카드 자료형    <List ? extends Number>
+제네릭 메서드               static <E> List<E> asList(E[] a)
+자료형 토큰                 String.class
