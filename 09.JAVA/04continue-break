@@ -1,0 +1,16 @@
+반복문 사용시
+
+for (i=1;  i<= 10; i++)
+{
+   if (i == 5)
+      //continue or break
+   System.out.println(i);
+}
+
+continue를 사용하면 이후의 코드를 무시하고 다음 반복으로 넘어감
+
+1 2 3 4 6 7 8 9 10
+
+break를 사용하면 해당 반복문을 빠져 나옴
+
+1 2 3 4 
