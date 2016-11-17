@@ -1,0 +1,25 @@
+		String[] initUrl = (String[]) (initPage).split("\\?");
+
+		if (initUrl.length >= 2) {
+			initPage = initUrl[0];
+			String param = initUrl[1];
+			HashMap<String, String> queryMap = (HashMap<String, String>) commonUtils.parseQueryString(param);
+			req.setAttribute("queryMap", queryMap);
+		}
+    
+     public Map<String, String > parseQueryString(String queryString) {
+    	Map<String, String > queryMap = new HashMap<String, String>();
+
+        for(String pair : queryString.split("&")) {
+          int index = pair.indexOf('=');
+          // -1 means not found
+          // 0 means at beginnging, e.g '=a'
+          if(index <=0) {
+              continue;
+          }
+          String key = pair.substring(0, index);
+          String value = pair.substring(index + 1);
+          queryMap.put(key, value);
+        }
+        return queryMap;
+      } 
