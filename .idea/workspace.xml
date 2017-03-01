@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3252b207-19b3-4500-8533-acfac076c650" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode2.md" afterPath="$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode2.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2017.study_book_List.md" afterPath="$PROJECT_DIR$/2017.study_book_List.md" />
     </list>
     <ignored path="study1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,12 +55,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017.study_book_List.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2017.study_book_List.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2017.study_book_List.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+              <first_editor vertical-scroll-proportion="0.45786965">
+                <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -71,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/1630.gradleTutorial/01.tutorial.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.108892925">
+              <first_editor vertical-scroll-proportion="0.0">
                 <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -84,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/RestTemplate.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.089030206">
+              <first_editor vertical-scroll-proportion="0.0">
                 <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
                 <folding />
               </first_editor>
@@ -97,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.3338633">
+              <first_editor vertical-scroll-proportion="0.0">
                 <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -106,12 +107,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpCode2.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="httpCode2.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.14354067">
-                <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <first_editor vertical-scroll-proportion="0.0">
+                <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -158,9 +159,9 @@
         <option value="$PROJECT_DIR$/1000.Programming/1700.GraqhQL/001.Introducetion to GraphQL.md" />
         <option value="$PROJECT_DIR$/6000.Server_OS/6400.MAC/02.PS.md" />
         <option value="$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/01.summary.md" />
-        <option value="$PROJECT_DIR$/2017.study_book_List.md" />
         <option value="$PROJECT_DIR$/1000.Programming/1600.spring/1630.gradleTutorial/01.tutorial.md" />
         <option value="$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode2.md" />
+        <option value="$PROJECT_DIR$/2017.study_book_List.md" />
       </list>
     </option>
   </component>
@@ -170,8 +171,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-51" />
-    <option name="y" value="-1004" />
+    <option name="x" value="-152" />
+    <option name="y" value="-1049" />
     <option name="width" value="1610" />
     <option name="height" value="951" />
   </component>
@@ -373,9 +374,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -882,6 +883,8 @@
       <workItem from="1487749807138" duration="160000" />
       <workItem from="1487899881516" duration="1609000" />
       <workItem from="1488156003176" duration="2656000" />
+      <workItem from="1488268664559" duration="75000" />
+      <workItem from="1488347771623" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="intelliJ commit">
       <created>1485667097665</created>
@@ -955,11 +958,17 @@
       <option name="project" value="LOCAL" />
       <updated>1488157993924</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="list update">
+      <created>1488268725208</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1488268725208</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38488000" />
+    <option name="totallyTimeSpent" value="38577000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -971,20 +980,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-51" y="-1004" width="1610" height="951" extended-state="0" />
+    <frame x="-152" y="-1049" width="1610" height="951" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2072177" sideWeight="0.565051" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20673636" sideWeight="0.57015306" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2072177" sideWeight="0.43494898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20673636" sideWeight="0.42984694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22859518" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22831632" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.46906474" order="1" side_tool="false" content_ui="tabs" />
@@ -996,6 +1004,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
@@ -1019,7 +1028,8 @@
     <MESSAGE value="리눅스 커맨드라인 완벽 입문서 word file - &gt; md file 변환 완료" />
     <MESSAGE value="book list update" />
     <MESSAGE value="http code detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="http code detail" />
+    <MESSAGE value="list update" />
+    <option name="LAST_COMMIT_MESSAGE" value="list update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1409,17 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/01.summary.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="367" column="0" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1445,8 +1444,8 @@
     <entry file="file://$PROJECT_DIR$/2017.study_book_List.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <first_editor vertical-scroll-proportion="0.45786965">
+            <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1456,7 +1455,7 @@
     <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/1630.gradleTutorial/01.tutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.108892925">
+          <first_editor vertical-scroll-proportion="0.0">
             <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
             <folding />
           </first_editor>
@@ -1467,7 +1466,7 @@
     <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/RestTemplate.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.089030206">
+          <first_editor vertical-scroll-proportion="0.0">
             <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
             <folding />
           </first_editor>
@@ -1478,7 +1477,7 @@
     <entry file="file://$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.3338633">
+          <first_editor vertical-scroll-proportion="0.0">
             <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
             <folding />
           </first_editor>
@@ -1489,8 +1488,19 @@
     <entry file="file://$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.14354067">
-            <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/01.summary.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="367" column="0" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
