@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list id="bcbbca87-7f93-4f0c-a684-f1c4e338ce8e" name="New changelist" comment="" />
     <list default="true" id="3252b207-19b3-4500-8533-acfac076c650" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="study1.iws" />
@@ -41,12 +40,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="09.Exception.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="09.Exception.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="478">
+                <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -54,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -125,8 +124,8 @@
         <option value="$PROJECT_DIR$/1000.Programming/1500.regularExpression/02.regular입문.md" />
         <option value="$PROJECT_DIR$/9000.ETC/9700.atom/toLearn.md" />
         <option value="$PROJECT_DIR$/2017.study_book_List.md" />
-        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md" />
       </list>
     </option>
   </component>
@@ -166,6 +165,24 @@
             <path>
               <item name="study1" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0100.java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0100.java" type="462c0819:PsiDirectoryNode" />
+              <item name="0140.effectiveJava" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -705,7 +722,7 @@
       <workItem from="1506330244201" duration="634000" />
       <workItem from="1506397838061" duration="694000" />
       <workItem from="1506407579694" duration="140000" />
-      <workItem from="1506475555952" duration="622000" />
+      <workItem from="1506475555952" duration="1184000" />
     </task>
     <task id="LOCAL-00001" summary="intelliJ commit">
       <created>1485667097665</created>
@@ -879,7 +896,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76069000" />
+    <option name="totallyTimeSpent" value="76631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1915" height="1177" extended-state="6" />
@@ -1132,22 +1149,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="478">
+            <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
