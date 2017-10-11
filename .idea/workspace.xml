@@ -3,28 +3,9 @@
   <component name="ChangeListManager">
     <list id="bcbbca87-7f93-4f0c-a684-f1c4e338ce8e" name="New changelist" comment="" />
     <list default="true" id="3252b207-19b3-4500-8533-acfac076c650" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/곱셈공식1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/곱셈공식2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/곱셈공식3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/01.삼각함수.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/02.곱셈공식.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/001.논어의말.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0600.editor/README.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0200.stpringNboot/README.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0200.framework/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0200.stpringNboot/sqlLogSetting.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0200.framework/sqlLogSetting.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0300.blog/README.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.IT_infomation/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0300.blog/mongodb.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.IT_infomation/mongodb.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0300.blog/react-codelab-project.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.IT_infomation/react-codelab-project.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0300.blog/react.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.IT_infomation/react.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0400.server/README.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0300.serverNdatabase/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0500.git/README.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0500.tool/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algo/README.md" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/복소수1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/복소수2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/03.복소수.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="study1.iws" />
@@ -49,12 +30,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="01.삼각함수.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="01.삼각함수.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/01.삼각함수.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="180">
-                <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+              <first_editor relative-caret-position="195">
+                <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -62,12 +43,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02.곱셈공식.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/02.곱셈공식.md">
+      <file leaf-file-name="03.복소수.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/03.복소수.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -115,6 +96,7 @@
         <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/10.Concurrency.md" />
         <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/02.곱셈공식.md" />
         <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/01.삼각함수.md" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/03.복소수.md" />
       </list>
     </option>
   </component>
@@ -147,8 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,8 +220,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,14 +234,14 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book" />
-      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/0010.논어의말" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt" />
       <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img" />
       <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book" />
+      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/0010.논어의말" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -783,7 +765,8 @@
       <workItem from="1507592153442" duration="1598000" />
       <workItem from="1507607198238" duration="1340000" />
       <workItem from="1507629599768" duration="1471000" />
-      <workItem from="1507676567321" duration="1896000" />
+      <workItem from="1507676567321" duration="2154000" />
+      <workItem from="1507763992072" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="intelliJ commit">
       <created>1485667097665</created>
@@ -957,7 +940,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84621000" />
+    <option name="totallyTimeSpent" value="84974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1916" height="1177" extended-state="0" />
@@ -968,12 +951,12 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.53041625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.5346852" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18064517" sideWeight="0.3810032" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.46958378" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.46531484" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18943436" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
@@ -1026,9 +1009,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6400.MAC/01.iterm.md" />
-    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6200.AWS/01.start.md" />
-    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6999.ETC/0001.OAuth2.md" />
     <entry file="file://$PROJECT_DIR$/9000.ETC/programmer_competency_matrix.md" />
     <entry file="file://$PROJECT_DIR$/9000.ETC/9500.git/summary">
       <provider selected="true" editor-type-id="text-editor">
@@ -1095,16 +1075,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/001.논어의말.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/001.논어의말.md" />
     <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1137,7 +1108,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="225">
             <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1148,7 +1118,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1159,7 +1128,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1170,7 +1138,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="154">
             <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1181,28 +1148,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="409">
             <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-            <folding>
-              <marker date="1507630421000" expanded="true" signature="1416:1683" ph="{}" />
-              <marker date="1507630421000" expanded="true" signature="1475:1573" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="1501:1511" ph=" { " />
-              <marker date="1507630421000" expanded="true" signature="1501:1565" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="1556:1565" ph=" }" />
-              <marker date="1507630421000" expanded="true" signature="2051:2059" ph=" { " />
-              <marker date="1507630421000" expanded="true" signature="2080:2087" ph=" }" />
-              <marker date="1507630421000" expanded="true" signature="2144:2152" ph=" { " />
-              <marker date="1507630421000" expanded="true" signature="2173:2180" ph=" }" />
-              <marker date="1507630421000" expanded="true" signature="2258:2520" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="2317:2417" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="2343:2409" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="3086:3353" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="3145:3243" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="3171:3235" ph="{...}" />
-              <marker date="1507630421000" expanded="true" signature="3403:3445" ph="/.../" />
-              <marker date="1507630421000" expanded="true" signature="3578:3592" ph=" { " />
-              <marker date="1507630421000" expanded="true" signature="3618:3628" ph=" }" />
-              <marker date="1507630421000" expanded="true" signature="4218:4229" ph=" { " />
-              <marker date="1507630421000" expanded="true" signature="4268:4278" ph=" }" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -1258,7 +1203,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-1091">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1269,7 +1213,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="135">
             <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1286,11 +1229,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/복소수1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/복소수2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/01.삼각함수.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/03.복소수.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
