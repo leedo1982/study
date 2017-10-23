@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list id="bcbbca87-7f93-4f0c-a684-f1c4e338ce8e" name="New changelist" comment="" />
     <list default="true" id="3252b207-19b3-4500-8533-acfac076c650" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook/어린왕자2일차_20171016.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook/어린왕자3일차_20171017.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="study1.iws" />
@@ -191,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,10 +257,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -815,7 +807,8 @@
       <workItem from="1507849821002" duration="1067000" />
       <workItem from="1508110347187" duration="608000" />
       <workItem from="1508151058790" duration="106000" />
-      <workItem from="1508243633958" duration="67000" />
+      <workItem from="1508243633958" duration="166000" />
+      <workItem from="1508801303338" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="intelliJ commit">
       <created>1485667097665</created>
@@ -989,7 +982,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88551000" />
+    <option name="totallyTimeSpent" value="88666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1441" height="1177" extended-state="0" />
@@ -1000,16 +993,16 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.5453896" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.54824877" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18064517" sideWeight="0.3810032" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.45461044" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.45175126" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26447463" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2680486" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.46906474" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1260,28 +1253,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2730">
             <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-            <folding>
-              <marker date="1507765222000" expanded="true" signature="1416:1683" ph="{}" />
-              <marker date="1507765222000" expanded="true" signature="1475:1573" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="1501:1511" ph=" { " />
-              <marker date="1507765222000" expanded="true" signature="1501:1565" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="1556:1565" ph=" }" />
-              <marker date="1507765222000" expanded="true" signature="2051:2059" ph=" { " />
-              <marker date="1507765222000" expanded="true" signature="2080:2087" ph=" }" />
-              <marker date="1507765222000" expanded="true" signature="2144:2152" ph=" { " />
-              <marker date="1507765222000" expanded="true" signature="2173:2180" ph=" }" />
-              <marker date="1507765222000" expanded="true" signature="2258:2520" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="2317:2417" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="2343:2409" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="3086:3353" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="3145:3243" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="3171:3235" ph="{...}" />
-              <marker date="1507765222000" expanded="true" signature="3403:3445" ph="/.../" />
-              <marker date="1507765222000" expanded="true" signature="3578:3592" ph=" { " />
-              <marker date="1507765222000" expanded="true" signature="3618:3628" ph=" }" />
-              <marker date="1507765222000" expanded="true" signature="4218:4229" ph=" { " />
-              <marker date="1507765222000" expanded="true" signature="4268:4278" ph=" }" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
