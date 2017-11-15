@@ -27,16 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="09.Exception.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="1455">
                 <caret line="97" column="3" lean-forward="false" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
+=======
+      <file leaf-file-name="04.제곱근지수복소수.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/04.제곱근지수복소수.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
                 <folding />
               </first_editor>
               <second_editor />
             </state>
+<<<<<<< HEAD
           </provider>
         </entry>
       </file>
@@ -50,6 +60,77 @@
               </first_editor>
               <second_editor />
             </state>
+=======
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="howto.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/howto.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="어린왕자1일차_20171013.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook/어린왕자1일차_20171013.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="어린왕자2일차_20171016.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook/어린왕자2일차_20171016.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="이차함수_변형_부등식1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="이차함수_변형_부등식2.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식2.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="다항함수2.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수2.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="다항함수1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="다항함수3.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="이차함수_변형_부등식3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
           </provider>
         </entry>
       </file>
@@ -87,8 +168,14 @@
         <option value="$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/02.ps.md" />
         <option value="$PROJECT_DIR$/1000.Programming/1500.regularExpression/02.regular입문.md" />
         <option value="$PROJECT_DIR$/9000.ETC/9700.atom/toLearn.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md" />
         <option value="$PROJECT_DIR$/2017.study_book_List.md" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/02.곱셈공식.md" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/01.삼각함수.md" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/03.복소수.md" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/10.Concurrency.md" />
+        <option value="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/04.제곱근지수복소수.md" />
       </list>
     </option>
   </component>
@@ -99,10 +186,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="404" />
     <option name="y" value="23" />
     <option name="width" value="1276" />
     <option name="height" value="1027" />
+=======
+    <option name="y" value="23" />
+    <option name="width" value="1441" />
+    <option name="height" value="1177" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -122,9 +215,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+=======
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -151,23 +247,79 @@
               <item name="0100.java" type="462c0819:PsiDirectoryNode" />
               <item name="0140.effectiveJava" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0700.algoNmath" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0700.algoNmath" type="462c0819:PsiDirectoryNode" />
+              <item name="0710.엔지니어를위한모두의수학-matt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0700.algoNmath" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0800.english" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
+              <item name="0800.english" type="462c0819:PsiDirectoryNode" />
+              <item name="0810.writeBook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="9000.ETC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="9000.ETC" type="462c0819:PsiDirectoryNode" />
+              <item name="9700.atom" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book" />
       <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/0010.논어의말" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img" />
+      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook" />
+      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt" />
+      <recent name="$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -612,11 +764,14 @@
       <method />
     </configuration>
   </component>
+<<<<<<< HEAD
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
+=======
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -685,11 +840,32 @@
       <workItem from="1495584853791" duration="647000" />
       <workItem from="1505805955646" duration="2227000" />
       <workItem from="1505902985470" duration="1504000" />
+<<<<<<< HEAD
       <workItem from="1505949096263" duration="840000" />
       <workItem from="1506037635808" duration="704000" />
       <workItem from="1506214647912" duration="66000" />
       <workItem from="1506468070963" duration="101000" />
       <workItem from="1510752794506" duration="156000" />
+=======
+      <workItem from="1505949096263" duration="1494000" />
+      <workItem from="1506305974429" duration="615000" />
+      <workItem from="1506330244201" duration="634000" />
+      <workItem from="1506397838061" duration="694000" />
+      <workItem from="1506407579694" duration="140000" />
+      <workItem from="1506475555952" duration="1184000" />
+      <workItem from="1506901491134" duration="1249000" />
+      <workItem from="1506914618795" duration="436000" />
+      <workItem from="1507592153442" duration="1598000" />
+      <workItem from="1507607198238" duration="1340000" />
+      <workItem from="1507629599768" duration="1471000" />
+      <workItem from="1507676567321" duration="2154000" />
+      <workItem from="1507763992072" duration="1824000" />
+      <workItem from="1507849821002" duration="1067000" />
+      <workItem from="1508110347187" duration="608000" />
+      <workItem from="1508151058790" duration="106000" />
+      <workItem from="1508243633958" duration="166000" />
+      <workItem from="1508801303338" duration="16000" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
     </task>
     <task id="LOCAL-00001" summary="intelliJ commit">
       <created>1485667097665</created>
@@ -863,16 +1039,25 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="73737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="404" y="23" width="1276" height="1027" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="88666000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1441" height="1177" extended-state="0" />
+    <editor active="true" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5218801" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -881,7 +1066,18 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29254457" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.54824877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18064517" sideWeight="0.3810032" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.45175126" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2680486" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.46906474" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -897,7 +1093,10 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -931,19 +1130,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5500.codeWars/11.removeSmallest.md" />
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5500.codeWars/21.Twice linear(5).md" />
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5500.codeWars/22.ConvertString to camel case(5).md" />
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5500.codeWars/20.Find the divisors(6).md" />
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5500.codeWars/19.Did I Finish my Sudoku(5).md" />
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5500.codeWars/18.Does my number look big in this(6).md" />
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5100.codeility/Lesson04.PermCheck">
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/1640.springboot/01.Testing.md" />
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/1630.gradleTutorial/01.tutorial.md" />
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1600.spring/RestTemplate.md" />
+    <entry file="file://$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode.md" />
+    <entry file="file://$PROJECT_DIR$/9000.ETC/9200.RESTAPI/httpCode2.md" />
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1200.effectiveJava/규칙51.문자열연결시성능에주의하라">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/5000.ALGO/5100.codeility/Lesson04.MissingInteger">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -962,11 +1161,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1200.effectiveJava/규칙56일반적으로통용되는작명관습을따르라.md" />
+    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/01.summary.md" />
+    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/02.ps.md" />
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1500.regularExpression/1.6확장기능.md" />
+    <entry file="file://$PROJECT_DIR$/1000.Programming/1500.regularExpression/02.regular입문.md" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/TODO.md" />
+    <entry file="file://$PROJECT_DIR$/9000.ETC/grep.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/001.논어의말.md" />
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="556">
+            <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5000.ALGO/5100.codeility/Lesson05.CountDiv">
+    <entry file="file://$PROJECT_DIR$/9000.ETC/9700.atom/toLearn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -1069,61 +1301,270 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1000.Programming/1200.effectiveJava/규칙56일반적으로통용되는작명관습을따르라.md" />
-    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/01.summary.md" />
-    <entry file="file://$PROJECT_DIR$/6000.Server_OS/6100.리눅스 커맨드라인 완벽 입문서/02.ps.md" />
-    <entry file="file://$PROJECT_DIR$/1000.Programming/1500.regularExpression/1.6확장기능.md" />
-    <entry file="file://$PROJECT_DIR$/1000.Programming/1500.regularExpression/02.regular입문.md" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/TODO.md" />
-    <entry file="file://$PROJECT_DIR$/9000.ETC/grep.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/9000.ETC/9700.atom/toLearn.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/001.논어의말.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1455">
-            <caret line="97" column="3" lean-forward="false" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
+=======
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2017.study_book_List.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="86">
-            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0200.framework/sqlLogSetting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.IT_infomation/mongodb.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.IT_infomation/react.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="154">
+            <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/곱셈공식3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/곱셈공식1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/곱셈공식2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/삼각함수2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0110.GOF/01.StrategyDesign.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1091">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0110.GOF/02.adapterPattern.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/02.곱셈공식.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/복소수1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/9000.ETC/9700.atom/toLearn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/복소수2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/03.복소수.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0000.Book/001.논어의말.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/01.삼각함수.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/10.Concurrency.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2730">
+            <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0100.java/0140.effectiveJava/09.Exception.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1455">
+            <caret line="97" column="3" lean-forward="false" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
+=======
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/제곱근지수복소수2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/제곱근지수복소수1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/0710.엔지니어를위한모두의수학-matt/04.제곱근지수복소수.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
             <folding />
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/2017.study_book_List.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="86">
+            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/howto.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> bab321a8572ab89a0d62690ee44dbc2fd25814da
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook/어린왕자1일차_20171013.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0800.english/0810.writeBook/어린왕자2일차_20171016.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/이차함수_변형_부등식2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0000.2017_Tech_Plan_Study/0700.algoNmath/img/다항함수3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
