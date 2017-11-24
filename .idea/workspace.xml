@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="bcbbca87-7f93-4f0c-a684-f1c4e338ce8e" name="New changelist" comment="" />
-    <list default="true" id="3252b207-19b3-4500-8533-acfac076c650" name="Default" comment="list update 0317">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3252b207-19b3-4500-8533-acfac076c650" name="Default" comment="list update 0317" />
     <ignored path="study1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -60,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -159,34 +156,7 @@
               <item name="study1" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="0100.java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="0100.java" type="462c0819:PsiDirectoryNode" />
-              <item name="0140.effectiveJava" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
               <item name="0700.algoNmath" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="0700.algoNmath" type="462c0819:PsiDirectoryNode" />
-              <item name="0710.엔지니어를위한모두의수학-matt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="0000.2017_Tech_Plan_Study" type="462c0819:PsiDirectoryNode" />
-              <item name="0700.algoNmath" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study1" type="b2602c69:ProjectViewProjectNode" />
@@ -766,7 +736,7 @@
       <workItem from="1508151058790" duration="106000" />
       <workItem from="1508243633958" duration="166000" />
       <workItem from="1508801303338" duration="125000" />
-      <workItem from="1511500092043" duration="80000" />
+      <workItem from="1511500092043" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="intelliJ commit">
       <created>1485667097665</created>
@@ -940,7 +910,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88855000" />
+    <option name="totallyTimeSpent" value="89084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1441" height="1177" extended-state="0" />
@@ -956,10 +926,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18064517" sideWeight="0.3810032" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.44889206" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32809612" sideWeight="0.44889206" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716226" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2716226" sideWeight="0.69926196" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.46906474" order="1" side_tool="false" content_ui="tabs" />
@@ -1298,7 +1268,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
       </provider>
