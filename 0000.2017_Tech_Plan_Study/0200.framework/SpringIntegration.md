@@ -28,6 +28,10 @@ Messaging : 프로그램간에 빠르고 신뢰할 수 있는 통신을 비동�
 
 
 ### 2. 어떻게 쓰는건지?
+dddd
+:w
+
+
 
 ```
 Spring Integration History
@@ -71,6 +75,6 @@ Message<User> message2 =  MessageBuilder.withPayload(user).build();
 ![Image](./SI_EP_2.png)
 
 
-### 3. 예제와 사례
+Gateway (SimpleGateway) -> Channel -> TcpOutboundGateway -> <==Socket==> -> TcpInboundGateway -> Channel -> ServiceActivator (EchoService)
 
 
