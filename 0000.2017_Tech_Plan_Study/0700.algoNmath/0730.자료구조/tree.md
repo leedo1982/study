@@ -93,3 +93,20 @@
  최소 힙
  - 키 값이 가장 작은 노드를 찾기 위한 완전 이진트리
 
+### 히프의 추상 자료형
+ADT Heap
+데이터 : n개의 원소로 구성된 완전 이진 트리로서 각 노드의 키값은 그의 자식 노드의 키값보다 크거나 같다.
+연산 :
+    heap ∈ Heap; item∈Element; 
+    createHeap() ∷= create an empty heap;
+    // 공백 힙의 생성 연산
+    isEmpty(heap) ∷= if (heap is empty) then return true;
+                     else return false; // 힙이 공백인지를 검사하는 연산
+    insertHeap(heap, item) ∷= insert item into heap;
+    // 힙의 적당한 위치에 원소(item)를 삽입하는 연산
+    deleteHeap(heap) ∷= if (isEmpty(heap)) then return error;
+    else {
+    item ← 힙에서 가장 큰 원소;
+    remove {힙에서 가장 큰 원소};
+    return item;
+    // 힙에서 키값이 가장 큰 원소를 삭제하고 반환하는 연산
