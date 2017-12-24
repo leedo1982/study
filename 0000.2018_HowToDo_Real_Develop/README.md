@@ -15,8 +15,5 @@
 3. programming language : Python 3
  - 파이썬을 통해 업무 자동화를 실행한다.
 
-4. Intellij private license 구매
-
-5. 몸을 건강하게 체중을 줄이자.
+4. 몸을 건강하게 체중을 줄이자.
  - 1년에 10kg 줄이기 ( 90kg 초반 유지)
-
