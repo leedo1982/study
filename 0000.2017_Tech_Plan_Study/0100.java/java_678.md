@@ -1,16 +1,25 @@
 
-java 1.5
-
-1. Generics
-2.foreach
-3. 자동 拆箱 포장
-4. 열거
-5. 정적 가져오기(Static import)
-6.메타데이터(Metadata)
+### java 1.5 (기능적으로 가장 많은 변화가 생김)
+1. Generics 
+2. annotation
+3. auto boxing
+4. enum
+5. vararg 
+6. foreach
+7. static imports 도입
 7. 스레드 풀
-8.Java Generics
+8. Java Generics
+
+### java 1.6
+1. 기능에 별 차이 없음 - 보안 성능 강화 주력
+2. G1(Garbage First) GC 도입
 
 
+### java 1.7
+1. Switch에서 String
+2. try-resource
+3. generics에서 타입추론
+4. 숫자에서 underscore사용
 
 ### java 1.8
 1. Lambda expressions
