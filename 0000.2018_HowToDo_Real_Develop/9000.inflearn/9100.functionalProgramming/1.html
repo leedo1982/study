@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1. 함수형 프로그래밍 개요</title>
+</head>
+
+<body>
+
+<script>
+    /* 순수 함수 */
+    // 1. 항상 동일한 인자를 주면 동일한 결과가 나온다.
+    // 2. 부수효과가 없다.
+    // 3. 순수함수는 평가 시점이 중요하지 않다.(중요한 특징) : 조합성을 강하게 해준다.
+    function add (a,b){
+        return a+b;
+    }
+    console.log(add(10,5));
+
+
+    // ! 1 = 항상동일한 인자를 주어도 결과가 달라진다.
+    var c =10;
+    function add2(a,b){
+        return a+b+c;
+    }
+    console.log(add2(10,5));
+    c =5;
+    console.log(add2(10,5));
+
+    // ! 2 = 부수효과가 존재한다. c
+    function add3(a,b){
+        c = b;
+        reutrn  a + b;
+    }
+    var obj1 = {val : 10 };
+    function abb4(obj, b){
+        obj.val += b;
+    }  
+
+    // 순수함수
+    // 객체를 변경하지 못하는가?! 아니다. 객체를 복사한 후 리턴 해줌
+    var obj1 = {val : 10 };
+    function abb5(obj, b){
+        return {val : obj.val + b };
+    }
+
+    /*  일급함수 */
+    // 함수를 값으로 담을수 있다.
+    // 변수, 인자
+    var f1 = function(a){ return a+a;};
+    console.log(f1);
+    var f2 = add;
+    console.log(f2);
+    
+    function f3(f){
+        return f(); 
+    }
+
+    console.log(f3(function(){return 10;};));
+   
+    언제 평가해도 동일한 순수함수를 들고 다니면서 필요할 때 꺼내어 쓰는 함수 프로그래밍.
+
+    /* add_maker = 1급함수 + 클로저 */
+
+    function add_maker(a){
+        return function(b){
+            return a+b;
+        }
+    }
+
+    var add10 = add_maker(10);
+    console.log(add10(20));
+    
+    function f4(f1,f2,f3{
+        return f3(f1() + f2());
+    }
+     
+    f4(
+        function() {return 2;},
+        function() {return 1;},
+        function(a) { return a*a;}
+    );
+
+
+    
+
+
+
+
+</script>
+
+</body>
+
+
